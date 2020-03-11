@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/joey/.config/sxhkd'
+let g:netrw_dirhist_2='/home/joey/university/year3/spring/csce411'
+let g:netrw_dirhist_1='/home/joey/.config/sxhkd'
