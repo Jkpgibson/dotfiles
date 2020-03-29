@@ -3,16 +3,13 @@
 " author: Werner Fink       <werner@suse.de> 
 " author: Florian La Roche  <florian@suse.de> 
 " version: 2017/04/28
-" commented lines start with `"'
+" commented lines start with `"
 
 set rtp+=~/university/current-course
+set pythonthreedll=libpython3.8.so.1.0
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'sirver/ultisnips'
-    let g:UltiSnipsExpandTrigger = '<tab>'
-    let g:UltiSnipsJumpForwardTrigger = '<tab>'
-    let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 Plug 'lervag/vimtex'
     let g:tex_flavor='latex'
