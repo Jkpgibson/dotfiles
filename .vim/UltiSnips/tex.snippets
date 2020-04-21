@@ -17,29 +17,33 @@ def math():
 		return False
 endglobal
 
-snippet template "Basic template" b
-\documentclass[a4paper]{article}
-
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage{amsmath, amssymb}
-
-
-% figure support
-\usepackage{import}
-\usepackage{xifthen}
-\pdfminorversion=7
-\usepackage{pdfpages}
-\usepackage{transparent}
-\newcommand{\incfig}[1]{%
-	\def\svgwidth{\columnwidth}
-	\import{./figures/}{#1.pdf_tex}
-}
-
-\pdfsuppresswarningpagegroup=1
-
+snippet jpn "japn" b
+\documentclass[12pt]{article}
+\usepackage{CJKutf8}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 \begin{document}
+\begin{CJK}{UTF8}{min}
+\lhead{\begin{CJK}{UTF8}{min} 日本語１０２　４月　日のしゅくだい\end{CJK}}
+\rhead{\begin{CJK}{UTF8}{min} 名前：　ジョー　ギブソン　\end{CJK}}
+\cfoot{\thepage\ of \pageref{LastPage}}
+	$0
+\end{CJK}
+\end{document}
+endsnippet
+snippet template "Basic template" b
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{tcolorbox}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{algorithm, algorithmic}
+\pagestyle{fancy}
+\begin{document}
+\lhead{Joseph Gibson}
+\rhead{CLASS 000 Spring '20 \\ Homework 0}
+\cfoot{\thepage\ of \pageref{LastPage}}
 	$0
 \end{document}
 endsnippet
@@ -349,7 +353,7 @@ snippet >= "geq" iA
 endsnippet
 
 context "math()"
-snippet EE "geq" iA
+snippet EE "exists" iA
 \exists 
 endsnippet
 

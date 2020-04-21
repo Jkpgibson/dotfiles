@@ -12,3 +12,9 @@
 
 test -s ~/.alias && . ~/.alias || true
 export PATH=$PATH:/opt/cisco/anyconnect/bin/
+alias pgadmin4='~/pgadmin4/pgadmin4.sh'
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+ibus-daemon -drx
+export PATH="${PATH}:${HOME}/.local/bin/"

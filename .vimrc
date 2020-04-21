@@ -10,6 +10,10 @@ set pythonthreedll=libpython3.8.so.1.0
 
 call plug#begin('~/.vim/plugged')
 
+Plug 'SirVer/ultisnips'
+    let g:UltiSnipsExpandTrigger = '<tab>'
+    let g:UltiSnipsJumpForwardTrigger = '<tab>'
+    let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 Plug 'lervag/vimtex'
     let g:tex_flavor='latex'
@@ -20,6 +24,9 @@ Plug 'KeitaNakamura/tex-conceal.vim'
     set conceallevel=1
     let g:tex_conceal='abdmg'
 
+Plug 'dylanaraps/wal'
+colorscheme wal
+set background=dark
 
 call plug#end()
 
