@@ -1,0 +1,14 @@
+#!/bin/sh
+
+alias \
+	gpg2="gpg2 --homedir $XDG_DATA_HOME/gnupg" \
+	sshh="ssh root@josephkgibson.com -p 58023" \
+	zse="zypper se" \
+	zin="sudo zypper in" \
+	zup="sudo zypper dup" 
+
+
+
+	
+
+
